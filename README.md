@@ -1,5 +1,10 @@
 # Research
 
+## Machine Learning
+### Intraday ML
+A simple machine learning strategy based on intraday data. The strategy uses a large set of pre-calculated features based on minute bars, which are resampled to hourly bars. The Machine Learning model used is a hyper-parameter tuned LGBM.
+The idea of the strategy is to open a trading position in the morning and close it in the evening.
+
 ## Portfolio
 
 ### HERC
