@@ -4,6 +4,8 @@
 ### Intraday ML
 A simple machine learning strategy based on intraday data. The strategy uses a large set of pre-calculated features based on minute bars, which are resampled to hourly bars. The Machine Learning model used is a hyper-parameter tuned LGBM.
 The idea of the strategy is to open a trading position in the morning and close it in the evening.
+### Machine Learning Strategy using Trend Scanner (Daily data)
+In this notebook we will try to implement a simple Machine Learning based strategy to forecast and trade an S&P 500 ETF. The strategy uses a set of very simple technical features, permutation as a feature selection algorithm and an optuna-based hyper parameter optimization. The label for the strategy is based on Marcos Lopez de Prado's Trend Scanner.
 
 ## Portfolio
 
