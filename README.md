@@ -8,6 +8,11 @@ The idea of the strategy is to open a trading position in the morning and close 
 ### Machine Learning Strategy using Trend Scanner (Daily data)
 In this notebook we will try to implement a simple Machine Learning based strategy to forecast and trade an S&P 500 ETF. The strategy uses a set of very simple technical features, permutation as a feature selection algorithm and an optuna-based hyper parameter optimization. The label for the strategy is based on Marcos Lopez de Prado's Trend Scanner.
 
+### Conditional Probability to improve an options selling strategy
+In this notebook we try to use Ernest Chan's ideas on Conditional Probability (https://www.youtube.com/watch?v=nBy7b_oZ7mE) to improve an options selling strategy introduced by "Quant Galore" (https://quantgalore.substack.com/p/selling-volatility-the-right-way). 
+According to Chan, we can use Machine Learning to predict the profitability of our next trade, which allows to vary exposure, reduce drawdowns and improve the strategy's performance.
+I am aware that the history is very short, therefore using a cross-validation and walk-forward optimization only makes limited sense. This notebook is more a showcase of the conditional probability idea.
+
 ## Portfolio
 
 ### HERC
@@ -17,7 +22,7 @@ The HERC optimization is based on the paper by: [Raffinot, Thomas, The Hierarchi
 The portfolio is then backtested and the results are compared. We try to create a diversified portfolio meanwhile keeping in mind transaction costs.
 
 ### ETF Sector Rotation
-In this notebook we create a secotr rotation strategy implemented with sector ETFs. 
+In this notebook we create a sector rotation strategy implemented with sector ETFs. 
 The idea is taken from the post by: [Sector Momentum - Rotational System](https://quantpedia.com/strategies/sector-momentum-rotational-system/)
 and uses Rob Carver's definition of momentum.
 
